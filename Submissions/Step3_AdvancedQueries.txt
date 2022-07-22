@@ -1,0 +1,188 @@
+query 1 - search=*&$select=description,rating_average,level,role,title,source,instructor,entities&$filter=instructor eq 'Mike Montoya'
+result
+{
+  "@odata.context": "https://test-cogno.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "source": "Company Moodle",
+      "title": "Onboarding - Time Tracking",
+      "description": "Learn how to track billable and non-billable hours by assigning time to projects and other relevant time codes",
+      "level": "beginner",
+      "role": "all",
+      "rating_average": 4.8,
+      "instructor": "Mike Montoya",
+      "entities": "[{\"name\":\"Mike Montoya\",\"description\":\"Mike  is our HR trainer responsible for helping employees be successful in their careers at our company.  He has been with us for 3 years. Mike is an amateur chef and enjoys outdoor live music events.\",\"matches\":[{\"text\":\"Mike Montoya\",\"offset\":0,\"length\":12,\"matchDistance\":0.0}]}]"
+    },
+    {
+      "@search.score": 1,
+      "source": "Company Moodle",
+      "title": "Onboarding - Technology Policies",
+      "description": "Learn the policies related to the distribution and use of computers, phones, software, and other technology",
+      "level": "beginner",
+      "role": "all",
+      "rating_average": 4.9,
+      "instructor": "Mike Montoya",
+      "entities": "[{\"name\":\"Mike Montoya\",\"description\":\"Mike  is our HR trainer responsible for helping employees be successful in their careers at our company.  He has been with us for 3 years. Mike is an amateur chef and enjoys outdoor live music events.\",\"matches\":[{\"text\":\"Mike Montoya\",\"offset\":0,\"length\":12,\"matchDistance\":0.0}]}]"
+    },
+    {
+      "@search.score": 1,
+      "source": "Company Moodle",
+      "title": "Workplace Health",
+      "description": "Understand ways you can be more healthy in the work environment including what ergonomic equipment is available to you",
+      "level": "beginner",
+      "role": "all",
+      "rating_average": 4.6,
+      "instructor": "Mike Montoya",
+      "entities": "[{\"name\":\"Mike Montoya\",\"description\":\"Mike  is our HR trainer responsible for helping employees be successful in their careers at our company.  He has been with us for 3 years. Mike is an amateur chef and enjoys outdoor live music events.\",\"matches\":[{\"text\":\"Mike Montoya\",\"offset\":0,\"length\":12,\"matchDistance\":0.0}]}]"
+    }
+  ]
+}
+
+query 2 - search=*&$select=metadata_author,metadata_title,doi,publisher&$filter=(metadata_storage_size gt 100000)
+result
+{
+  "@odata.context": "https://test-cogno.search.windows.net/indexes('papers-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "metadata_author": "Tuba Parlar ",
+      "metadata_title": "QER: a new feature selection method for sentiment analysis",
+      "publisher": "Springer",
+      "doi": "10.1186/s13673-018-0135-8"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": null,
+      "metadata_title": null,
+      "publisher": "",
+      "doi": ""
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Taiwo Kolajo ",
+      "metadata_title": "Big data stream analysis: a systematic literature review",
+      "publisher": "Springer",
+      "doi": "10.1186/s40537-019-0210-7"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Haoliang Cui",
+      "metadata_title": "A classification method for social information of sellers on social network",
+      "publisher": "Springer",
+      "doi": "10.1186/s13640-020-00545-z"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Alina Köchling ",
+      "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+      "publisher": "Springer",
+      "doi": "10.1007/s40685-020-00134-w"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Rik Das",
+      "metadata_title": "Multi technique amalgamation for enhanced information identification with content based image data",
+      "publisher": "Springer",
+      "doi": "10.1186/s40064-015-1515-4"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Muhammad Taimoor Khan",
+      "metadata_title": "Sentiment analysis and the complex natural language",
+      "publisher": "Springer",
+      "doi": "10.1186/s40294-016-0016-9"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Boping Zhang",
+      "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform",
+      "publisher": "Springer",
+      "doi": "10.1186/s13640-018-0373-8"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Partheeban Chandrasekaran",
+      "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis",
+      "publisher": "Springer",
+      "doi": "10.1186/s40493-015-0019-z"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "P. Ram Mohan Rao ",
+      "metadata_title": "Privacy preservation techniques in big data analytics: a survey",
+      "publisher": "Springer",
+      "doi": "10.1186/s40537-018-0141-8"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": null,
+      "metadata_title": null,
+      "publisher": "",
+      "doi": ""
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Tu Nguyen Thi Ngoc ",
+      "metadata_title": "Mining aspects of customer’s review on the social network",
+      "publisher": "Springer",
+      "doi": "10.1186/s40537-019-0184-5"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Zengda Guan",
+      "metadata_title": "Local regression transfer learning with applications to users’ psychological characteristics prediction",
+      "publisher": "Springer",
+      "doi": "10.1007/s40708-015-0017-z"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Ferdousi Sabera Rawnaque ",
+      "metadata_title": "Technological advancements and opportunities in Neuromarketing: a systematic review",
+      "publisher": "Springer",
+      "doi": "10.1186/s40708-020-00109-x"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Iqbal H. Sarker ",
+      "metadata_title": "Context-aware rule learning from smartphone data: survey, challenges and future directions",
+      "publisher": "Springer",
+      "doi": "10.1186/s40537-019-0258-4"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Sandhya Narayanan ",
+      "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter",
+      "publisher": "Springer",
+      "doi": "10.1186/s40537-020-00292-y"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": " Shun Kodate ",
+      "metadata_title": "Detecting problematic transactions in a consumer-to-consumer e-commerce network",
+      "publisher": "Springer",
+      "doi": "10.1007/s41109-020-00330-x"
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Administrator",
+      "metadata_title": "01-CVM0189.pdf",
+      "publisher": "",
+      "doi": ""
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": null,
+      "metadata_title": null,
+      "publisher": "",
+      "doi": ""
+    },
+    {
+      "@search.score": 1,
+      "metadata_author": "Chunyong Yin ",
+      "metadata_title": "Mobile marketing recommendation method based on user location feedback",
+      "publisher": "Springer",
+      "doi": "10.1186/s13673-019-0177-6"
+    }
+  ]
+}

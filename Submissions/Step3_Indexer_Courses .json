@@ -1,0 +1,46 @@
+{
+  "@odata.context": "https://test-cogno.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DA6B61E860E0F4\"",
+  "name": "azureblob-indexer",
+  "description": "",
+  "dataSourceName": "course",
+  "skillsetName": "azureblob-skillset",
+  "targetIndexName": "azureblob-index",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "base64EncodeKeys": null,
+    "configuration": {
+      "dataToExtract": "contentAndMetadata",
+      "parsingMode": "delimitedText",
+      "firstLineContainsHeaders": true,
+      "delimitedTextDelimiter": ",",
+      "delimitedTextHeaders": ""
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "AzureSearch_DocumentKey",
+      "targetFieldName": "AzureSearch_DocumentKey",
+      "mappingFunction": {
+        "name": "base64Encode",
+        "parameters": null
+      }
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/description/keyphrases",
+      "targetFieldName": "keyphrases"
+    },
+    {
+      "sourceFieldName": "/document/instructor/entities",
+      "targetFieldName": "entities"
+    }
+  ],
+  "cache": null,
+  "encryptionKey": null
+}

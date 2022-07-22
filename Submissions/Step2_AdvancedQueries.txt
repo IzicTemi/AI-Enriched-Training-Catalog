@@ -1,0 +1,544 @@
+query 1 - search=*&$select=metadata_author,metadata_title,metadata_storage_size&$filter=(metadata_storage_size gt 100000)
+result
+{
+  "@odata.context": "https://test-cogno.search.windows.net/indexes('papers-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1280780,
+      "metadata_author": "Tuba Parlar ",
+      "metadata_title": "QER: a new feature selection method for sentiment analysis"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1012456,
+      "metadata_author": null,
+      "metadata_title": null
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1344318,
+      "metadata_author": "Taiwo Kolajo ",
+      "metadata_title": "Big data stream analysis: a systematic literature review"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 548509,
+      "metadata_author": "Haoliang Cui",
+      "metadata_title": "A classification method for social information of sellers on social network"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 593265,
+      "metadata_author": "Alina Köchling ",
+      "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 2424684,
+      "metadata_author": "Rik Das",
+      "metadata_title": "Multi technique amalgamation for enhanced information identification with content based image data"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1582435,
+      "metadata_author": "Muhammad Taimoor Khan",
+      "metadata_title": "Sentiment analysis and the complex natural language"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 2713106,
+      "metadata_author": "Boping Zhang",
+      "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 2986829,
+      "metadata_author": "Partheeban Chandrasekaran",
+      "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1156098,
+      "metadata_author": "P. Ram Mohan Rao ",
+      "metadata_title": "Privacy preservation techniques in big data analytics: a survey"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 707841,
+      "metadata_author": null,
+      "metadata_title": null
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1688565,
+      "metadata_author": "Tu Nguyen Thi Ngoc ",
+      "metadata_title": "Mining aspects of customer’s review on the social network"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 456223,
+      "metadata_author": "Zengda Guan",
+      "metadata_title": "Local regression transfer learning with applications to users’ psychological characteristics prediction"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1434817,
+      "metadata_author": "Ferdousi Sabera Rawnaque ",
+      "metadata_title": "Technological advancements and opportunities in Neuromarketing: a systematic review"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1660534,
+      "metadata_author": "Iqbal H. Sarker ",
+      "metadata_title": "Context-aware rule learning from smartphone data: survey, challenges and future directions"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1702203,
+      "metadata_author": "Sandhya Narayanan ",
+      "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 2469691,
+      "metadata_author": " Shun Kodate ",
+      "metadata_title": "Detecting problematic transactions in a consumer-to-consumer e-commerce network"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 3040236,
+      "metadata_author": "Administrator",
+      "metadata_title": "01-CVM0189.pdf"
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 514849,
+      "metadata_author": null,
+      "metadata_title": null
+    },
+    {
+      "@search.score": 1,
+      "metadata_storage_size": 1373874,
+      "metadata_author": "Chunyong Yin ",
+      "metadata_title": "Mobile marketing recommendation method based on user location feedback"
+    }
+  ]
+}
+
+query 2 - search=sentiment+analysis&$select=metadata_author,metadata_title&$orderby=metadata_author
+result
+{
+  "@odata.context": "https://test-cogno.search.windows.net/indexes('papers-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 0.74129784,
+      "metadata_author": "Boping Zhang",
+      "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform"
+    },
+    {
+      "@search.score": 3.6621103,
+      "metadata_author": "Muhammad Taimoor Khan",
+      "metadata_title": "Sentiment analysis and the complex natural language"
+    },
+    {
+      "@search.score": 2.1338105,
+      "metadata_author": "P. Ram Mohan Rao ",
+      "metadata_title": "Privacy preservation techniques in big data analytics: a survey"
+    },
+    {
+      "@search.score": 3.2544014,
+      "metadata_author": "Sandhya Narayanan ",
+      "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter"
+    },
+    {
+      "@search.score": 2.102455,
+      "metadata_author": "Taiwo Kolajo ",
+      "metadata_title": "Big data stream analysis: a systematic literature review"
+    },
+    {
+      "@search.score": 4.2572126,
+      "metadata_author": "Tu Nguyen Thi Ngoc ",
+      "metadata_title": "Mining aspects of customer’s review on the social network"
+    },
+    {
+      "@search.score": 3.502821,
+      "metadata_author": "Tuba Parlar ",
+      "metadata_title": "QER: a new feature selection method for sentiment analysis"
+    }
+  ]
+}
+
+query 3 - search=Azure&$select=description,duration,rating_average,level,role,title,source&$filter=duration gt 100&facet=role&$orderby=duration
+result
+{
+  "@odata.context": "https://test-cogno.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+  "@search.facets": {
+    "role": [
+      {
+        "count": 2,
+        "value": "administrator"
+      },
+      {
+        "count": 2,
+        "value": "developer"
+      },
+      {
+        "count": 2,
+        "value": "devops-engineer"
+      },
+      {
+        "count": 2,
+        "value": "solution-architect"
+      }
+    ]
+  },
+  "value": [
+    {
+      "@search.score": 1.5160636,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "devops-engineer",
+      "duration": 122,
+      "rating_average": 4.69
+    },
+    {
+      "@search.score": 1.5073998,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "developer",
+      "duration": 122,
+      "rating_average": 4.69
+    },
+    {
+      "@search.score": 1.4894823,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "solution-architect",
+      "duration": 122,
+      "rating_average": 4.69
+    },
+    {
+      "@search.score": 1.3760192,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "administrator",
+      "duration": 122,
+      "rating_average": 4.69
+    },
+    {
+      "@search.score": 1.3714036,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "devops-engineer",
+      "duration": 122,
+      "rating_average": 4.69
+    },
+    {
+      "@search.score": 1.257317,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "administrator",
+      "duration": 122,
+      "rating_average": 4.69
+    },
+    {
+      "@search.score": 1.1257514,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "developer",
+      "duration": 122,
+      "rating_average": 4.69
+    },
+    {
+      "@search.score": 1.1257514,
+      "source": "MS Learn",
+      "title": "Provision infrastructure in Azure Pipelines",
+      "description": "Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.",
+      "level": "intermediate",
+      "role": "solution-architect",
+      "duration": 122,
+      "rating_average": 4.69
+    }
+  ]
+}
+
+query 4 - search=Azure&$select=description,duration,rating_average,level,role,title,source,rating_count&$filter=(rating_average gt 4.5 and rating_count gt 5000)&$orderby=rating_average
+result
+{
+  "@odata.context": "https://test-cogno.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 2.990411,
+      "source": "MS Learn",
+      "title": "Get started with Azure DevOps",
+      "description": "Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.",
+      "level": "beginner",
+      "role": "developer",
+      "duration": 25,
+      "rating_count": 7797,
+      "rating_average": 4.73
+    },
+    {
+      "@search.score": 2.990411,
+      "source": "MS Learn",
+      "title": "Get started with Azure DevOps",
+      "description": "Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.",
+      "level": "beginner",
+      "role": "solution-architect",
+      "duration": 25,
+      "rating_count": 7797,
+      "rating_average": 4.73
+    },
+    {
+      "@search.score": 2.8636513,
+      "source": "MS Learn",
+      "title": "Get started with Azure DevOps",
+      "description": "Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.",
+      "level": "beginner",
+      "role": "administrator",
+      "duration": 25,
+      "rating_count": 7797,
+      "rating_average": 4.73
+    },
+    {
+      "@search.score": 2.209703,
+      "source": "MS Learn",
+      "title": "Get started with Azure DevOps",
+      "description": "Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.",
+      "level": "beginner",
+      "role": "devops-engineer",
+      "duration": 25,
+      "rating_count": 7797,
+      "rating_average": 4.73
+    },
+    {
+      "@search.score": 1.5246625,
+      "source": "MS Learn",
+      "title": "Create a build pipeline with Azure Pipelines",
+      "description": "Set up a continuous integration (CI) pipeline that automates the process of building your application.",
+      "level": "beginner",
+      "role": "solution-architect",
+      "duration": 80,
+      "rating_count": 5261,
+      "rating_average": 4.75
+    },
+    {
+      "@search.score": 1.234304,
+      "source": "MS Learn",
+      "title": "Create a build pipeline with Azure Pipelines",
+      "description": "Set up a continuous integration (CI) pipeline that automates the process of building your application.",
+      "level": "beginner",
+      "role": "developer",
+      "duration": 80,
+      "rating_count": 5261,
+      "rating_average": 4.75
+    },
+    {
+      "@search.score": 1.2335085,
+      "source": "MS Learn",
+      "title": "Create a build pipeline with Azure Pipelines",
+      "description": "Set up a continuous integration (CI) pipeline that automates the process of building your application.",
+      "level": "beginner",
+      "role": "administrator",
+      "duration": 80,
+      "rating_count": 5261,
+      "rating_average": 4.75
+    },
+    {
+      "@search.score": 1.006539,
+      "source": "MS Learn",
+      "title": "Create a build pipeline with Azure Pipelines",
+      "description": "Set up a continuous integration (CI) pipeline that automates the process of building your application.",
+      "level": "beginner",
+      "role": "devops-engineer",
+      "duration": 80,
+      "rating_count": 5261,
+      "rating_average": 4.75
+    },
+    {
+      "@search.score": 3.5037336,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "ai-engineer",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 3.4977403,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "developer",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 3.4199345,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "ai-engineer",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 3.0246625,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "developer",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.7411346,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "ai-engineer",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.6331437,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "data-scientist",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.6331437,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "data-scientist",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.6331437,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "student",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.5998888,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "data-scientist",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.5998888,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "student",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.595552,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "developer",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    },
+    {
+      "@search.score": 2.595552,
+      "source": "MS Learn",
+      "title": "Get started with AI on Azure",
+      "description": "Get started with AI on Azure",
+      "level": "beginner",
+      "role": "student",
+      "duration": 34,
+      "rating_count": 10997,
+      "rating_average": 4.78
+    }
+  ]
+}
+
+query 5 - search=*&$select=description,duration,rating_average,level,role,title,source&$filter=(rating_average gt 4.9 and level eq 'intermediate')
+result
+{
+  "@odata.context": "https://test-cogno.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "source": "MS Learn",
+      "title": "Create an Azure Cognitive Search solution",
+      "description": "Create an Azure Cognitive Search solution",
+      "level": "intermediate",
+      "role": "ai-engineer",
+      "duration": 63,
+      "rating_average": 4.91
+    },
+    {
+      "@search.score": 1,
+      "source": "MS Learn",
+      "title": "Create an Azure Cognitive Search solution",
+      "description": "Create an Azure Cognitive Search solution",
+      "level": "intermediate",
+      "role": "developer",
+      "duration": 63,
+      "rating_average": 4.91
+    },
+    {
+      "@search.score": 1,
+      "source": "MS Learn",
+      "title": "Create an Azure Cognitive Search solution",
+      "description": "Create an Azure Cognitive Search solution",
+      "level": "intermediate",
+      "role": "solution-architect",
+      "duration": 63,
+      "rating_average": 4.91
+    }
+  ]
+}

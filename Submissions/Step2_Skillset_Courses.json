@@ -1,0 +1,36 @@
+{
+  "@odata.context": "https://test-cogno.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DA6B60E6DA6D70\"",
+  "name": "azureblob-skillset",
+  "description": "Skillset created from the portal. skillsetName: azureblob-skillset; contentField: PartitionKey; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/PartitionKey",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/PartitionKey"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "/subscriptions/b78eea0f-4fbc-4673-a53c-ca57b91fa753/resourceGroups/aind-201661/providers/Microsoft.CognitiveServices/accounts/trying",
+    "key": "2d8fb8e74ec44cbea0dc4bd4a6cd548f"
+  },
+  "knowledgeStore": null,
+  "encryptionKey": null
+}
